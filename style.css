@@ -1,0 +1,28 @@
+#shapeSelect{
+    display: block;
+}
+#hexDim,#sqrDim,#obeDim,#resDim,#results{
+    display: none;
+}
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+    padding: .2rem;
+    margin: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+#hexPick,#sqrPick,#obePick,#resPick{
+    width: 20rem;
+    height: 6rem;
+}
+#hexPick{
+    background-image: url(hexBars.jpg);
+}
