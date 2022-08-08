@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Shape Selection -->
+    <div class="flex-container" id="shapeSelect">
+        <section class="flex-item">
+            <button id="hexPick">HEXAGONAL</button>
+        </section>
+        <section class="flex-item">
+            <button id="sqrPick">SQUARE / RECTANGLE</button>
+        </section>
+        <section class="flex-item">
+            <button id="obePick">TUBE, OPEN BOTH ENDS</button>
+        </section>
+        <section class="flex-item">
+            <button id="resPick">TUBE, RESTRICTED OR CLOSED</button>
+        </section>
+    </div>
+    <!-- Dimensions: Hexagonal -->
+    <div class="flex-container" id="hexDim">
+        <section class="flex-item">
+            <img src="hex.jpg" alt="hexagonal bar diagram">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="hexT" name="input" placeholder="THICKNESS">
+        </section>
+        <section class="flex-item">
+            <button id="hexCalc">Calculate</button>
+        </section>
+    </div>
+    <!-- Dimensions: Square/Rectangle -->
+    <div class="flex-container" id="sqrDim">
+        <section class="flex-item">
+            <img src="sqr.jpg" alt="square/rectangular bar diagram">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="sqrW" name="input" placeholder="WIDTH">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="sqrT" name="input" placeholder="THICKNESS">
+        </section>
+        <section class="flex-item">
+            <button id="sqrCalc">Calculate</button>
+        </section>
+    </div>
+    <!-- Dimensions: OBE Tube -->
+    <div class="flex-container" id="obeDim">
+        <section class="flex-item">
+            <img src="obe.jpg" alt="open tube diagram">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="obeD" name="input" placeholder="DIAMETER">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="obeL" name="input" placeholder="LENGTH">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="obeT" name="input" placeholder="THICKNESS">
+        </section>
+        <section class="flex-item">
+            <button id="obeCalc">Calculate</button>
+        </section>
+    </div>
+    <!-- Dimensions: RES Tube -->
+    <div class="flex-container" id="resDim">
+        <section class="flex-item">
+            <img src="obe.jpg" alt="restricted tube diagram">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="resD" name="input" placeholder="DIAMETER">
+        </section>
+        <section class="flex-item">
+            <input type="text" id="resT" name="input" placeholder="THICKNESS">
+        </section>
+        <section class="flex-item">
+            <button id="resCalc">Calculate</button>
+        </section>
+    </div>
+    <!-- Results -->
+    <div class="flex-container" id="results">
+        <section class="flex-item">
+            <h2 id="reportER"></h2>
+        </section>
+        <section class="flex-item">
+            <button id="reset">Reset</button>
+        </section>
+    </div>
+<!-- Javascript -->
+    <script src="main.js"></script>
+</body>
+</html>
